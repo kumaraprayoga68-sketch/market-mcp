@@ -1,0 +1,88 @@
+name: Scheduled scan
+
+on:
+  schedule:
+    # Every 4 hours. IDX trades 02:00-09:00 UTC (09:00-16:00 WIB) and crypto is
+    # continuous, so this covers the Jakarta session and keeps crypto fresh.
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+    inputs:
+      quick:
+        description: "Quick mode (small universes, no backtests)"
+        type: boolean
+        default: false
+      alert:
+        description: "Send the Telegram alert"
+        type: boolean
+        default: true
+
+# Never let two scans race to commit the same snapshot file.
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Run scan
+        env:
+          # Set these in Settings > Secrets and variables > Actions.
+          # Without them the job still runs and simply skips the alert.
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python scripts/run_scan.py \
+            ${{ inputs.quick && '--quick' || '' }} \
+            ${{ github.event_name == 'workflow_dispatch' && !inputs.alert && '--no-alert' || '' }}
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add snapshots
+          if git diff --cached --quiet; then
+            echo "snapshot unchanged; nothing to commit"
+            exit 0
+          fi
+          git commit -m "chore: market snapshot $(date -u +'%Y-%m-%d %H:%M')Z"
+          # The schedule can collide with a human push; rebase rather than fail.
+          git pull --rebase --autostash origin main
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, pathlib
+          p = pathlib.Path("snapshots/latest.json")
+          if not p.exists():
+              print("No snapshot was produced.")
+              raise SystemExit
+          d = json.loads(p.read_text(encoding="utf-8"))
+          print(f"## Snapshot {d['generated_at']}Z\n")
+          print(f"- built in {d['duration_seconds']}s")
+          print(f"- section errors: {len(d['errors'])}")
+          for market, signals in (d.get("scans") or {}).items():
+              hits = {k: v["matched"] for k, v in signals.items() if k != "_meta"}
+              print(f"- **{market}**: " + ", ".join(f"{k} {v}" for k, v in hits.items()))
+          if d["errors"]:
+              print("\n### Errors\n")
+              for e in d["errors"]:
+                  print(f"- `{e['section']}`: {e['error']}")
+          PY

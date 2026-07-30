@@ -2,25 +2,12 @@
 
 from __future__ import annotations
 
-import asyncio
 from typing import Any
 
-from .. import analysis
 from ..core.errors import envelope
-from ..market_data import load_candles
 from ..models import clean
 from ..providers import binance, idx
-
-SIGNALS = {
-    "oversold": "RSI below 30",
-    "overbought": "RSI above 70",
-    "bullish": "composite rating is buy or strong_buy",
-    "bearish": "composite rating is sell or strong_sell",
-    "uptrend": "price above the 200-EMA with Supertrend pointing up",
-    "downtrend": "price below the 200-EMA with Supertrend pointing down",
-    "volume_spike": "volume at least 2x its 20-bar average",
-    "squeeze": "Bollinger width in the tightest quarter of its recent range",
-}
+from ..scanning import SIGNALS, scan
 
 # Technical scans need one full candle request per symbol, so the cap keeps a
 # scan inside a reasonable response time rather than timing out the client.
@@ -198,22 +185,7 @@ def register(server: Any) -> None:
         else:
             symbols = list(idx.load_universe(universe))[:max_symbols]
 
-        sem = asyncio.Semaphore(6)
-        skipped: list[dict[str, str]] = []
-
-        async def evaluate(sym: str) -> dict[str, Any] | None:
-            async with sem:
-                try:
-                    candles, meta = await load_candles(sym, market, interval, 260)
-                    s = analysis.summarize(candles, symbol=meta["symbol"], interval=interval)
-                except Exception as e:  # noqa: BLE001 - a dead ticker must not stop the scan
-                    skipped.append({"symbol": sym, "reason": str(e)[:120]})
-                    return None
-            return _match(s, signal, candles)
-
-        rows = [r for r in await asyncio.gather(*(evaluate(s) for s in symbols)) if r]
-        rows.sort(key=lambda r: abs(r["rating_score"]), reverse=True)
-
+        rows, skipped = await scan(symbols, market, signal, interval)
         evaluated = len(symbols) - len(skipped)
         out = {
             "signal": signal,
@@ -249,76 +221,3 @@ def register(server: Any) -> None:
             ],
             "note": "IDX tickers carry a .JK suffix; pass them bare (BBCA) or suffixed.",
         }
-
-
-def _match(summary: dict[str, Any], signal: str, candles: list[dict[str, Any]]) -> dict[str, Any] | None:
-    """Return a result row if `summary` satisfies `signal`, else None."""
-    ind = summary["indicators"]
-    rating = summary["rating"]
-    rsi = ind.get("rsi_14")
-    label = rating["label"]
-
-    hit = False
-    if signal == "oversold":
-        hit = rsi is not None and rsi < 30
-    elif signal == "overbought":
-        hit = rsi is not None and rsi > 70
-    elif signal == "bullish":
-        hit = label in ("buy", "strong_buy")
-    elif signal == "bearish":
-        hit = label in ("sell", "strong_sell")
-    elif signal == "uptrend":
-        hit = (
-            ind.get("ema_200") is not None
-            and ind["price"] > ind["ema_200"]
-            and ind.get("supertrend_direction") == "up"
-        )
-    elif signal == "downtrend":
-        hit = (
-            ind.get("ema_200") is not None
-            and ind["price"] < ind["ema_200"]
-            and ind.get("supertrend_direction") == "down"
-        )
-    elif signal == "volume_spike":
-        hit = (ind.get("volume_vs_20bar_avg") or 0) >= 2.0
-    elif signal == "squeeze":
-        hit = _in_squeeze(ind, candles)
-
-    if not hit:
-        return None
-    return {
-        "symbol": summary["symbol"],
-        "price": ind["price"],
-        "rsi_14": rsi,
-        "rating": label,
-        "rating_score": rating["score"],
-        "trend_strength": rating["trend_strength"],
-        "volume_vs_20bar_avg": ind.get("volume_vs_20bar_avg"),
-        "adx_14": ind.get("adx_14"),
-    }
-
-
-def _in_squeeze(ind: dict[str, Any], candles: list[dict[str, Any]]) -> bool:
-    """Bollinger width in the tightest quarter of the last 100 bars.
-
-    Absolute width is meaningless across instruments, so it is normalised by
-    price and compared against the symbol's own recent history.
-    """
-    upper, lower, price = ind.get("bb_upper"), ind.get("bb_lower"), ind.get("price")
-    if not upper or not lower or not price:
-        return False
-    width_now = (upper - lower) / price
-
-    from ..indicators import bollinger  # local import keeps the module graph flat
-
-    closes = [c["close"] for c in candles]
-    up, _mid, low = bollinger(closes, 20, 2.0)
-    widths = [
-        (u - l) / c
-        for u, l, c in zip(up[-100:], low[-100:], closes[-100:])
-        if u is not None and l is not None and c
-    ]
-    if len(widths) < 20:
-        return False
-    threshold = sorted(widths)[len(widths) // 4]
-    return width_now <= threshold

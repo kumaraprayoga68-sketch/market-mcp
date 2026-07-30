@@ -84,6 +84,62 @@ market-mcp --transport streamable-http --port 8000
 
 ---
 
+## Scheduled scans, alerts and dashboard
+
+Beyond the MCP server, the repo runs itself on a schedule:
+
+```
+GitHub Actions (every 4h)
+  └─ scripts/run_scan.py
+       ├─ snapshots/latest.json  ──►  Vercel dashboard (reads it straight from GitHub)
+       └─ Telegram alert          ──►  only for setups that are new since the last run
+```
+
+`snapshots/latest.json` is committed back to the repo, so the dashboard picks up
+fresh data without a redeploy: the cron owns the data, Vercel only renders it.
+
+### Telegram alerts
+
+Alerts fire only on findings **absent from the previous snapshot**. A scan that
+runs every four hours will keep matching the same oversold ticker for days, and
+an alert that fires every run is an alert you stop reading.
+
+Set these in the repo under **Settings → Secrets and variables → Actions**:
+
+| Secret | Where to get it |
+|---|---|
+| `TELEGRAM_BOT_TOKEN` | [@BotFather](https://t.me/BotFather) → your bot → API token |
+| `TELEGRAM_CHAT_ID` | message your bot, then open `https://api.telegram.org/bot<TOKEN>/getUpdates` and read `result[].message.chat.id` |
+
+Without them the job still runs and simply skips the alert. Never commit the
+token — it is a bearer credential for the whole bot.
+
+### Running the scan by hand
+
+```bash
+python scripts/run_scan.py --quick --no-alert
+```
+
+`--quick` shrinks the universes and skips backtests; `--no-alert` never sends
+Telegram. A full run takes a few minutes and produces roughly 80 KB of JSON.
+
+Every section is independently guarded, so an outage at one venue degrades the
+snapshot rather than losing the run. Failures land in `snapshot.errors` and the
+dashboard shows them rather than pretending the data is complete.
+
+### Dashboard
+
+`dashboard/` is a Next.js app with no UI dependencies beyond React.
+
+```bash
+cd dashboard && npm install && npm run dev
+```
+
+To deploy: import the repo on Vercel and set **Root Directory** to `dashboard`.
+Point it at a different data source with the `SNAPSHOT_URL` environment variable.
+
+---
+
 ## Two things this server is careful about
 
 ### The backtester cannot see the future
@@ -147,11 +203,16 @@ src/market_mcp/
 ├── indicators.py     pure-Python TA
 ├── patterns.py       candlestick detection
 ├── analysis.py       indicator snapshot + composite rating
+├── scanning.py       signal matching, shared by the MCP tool and the cron job
+├── alerting.py       snapshot diffing and Telegram formatting
 ├── market_data.py    one candle loader across all venues
 ├── backtest/         engine, strategies, walk-forward
 └── tools/            MCP tool definitions
+scripts/run_scan.py   the scheduled job
+dashboard/            Next.js dashboard for Vercel
+snapshots/            latest.json + trimmed history, written by the cron
 data/                 idx.txt (277), us.txt (117)
-tests/                112 tests, no network required
+tests/                130 tests, no network required
 ```
 
 Providers know nothing about MCP; tools know nothing about HTTP. Adding a venue
@@ -165,9 +226,11 @@ means writing one provider module that returns the shared candle shape.
 pytest
 ```
 
-112 tests, all offline — they cover indicator known-answer cases, engine
+130 tests, all offline — they cover indicator known-answer cases, engine
 invariants (look-ahead, cost accounting, drawdown), symbol normalisation, the
-error envelope, cache de-duplication, and server wiring.
+error envelope, cache de-duplication, alert de-duplication, and server wiring.
+CI runs them on Python 3.10, 3.12 and 3.14, plus a smoke job that starts the
+server and checks it serves all 20 tools.
 
 ---
 
