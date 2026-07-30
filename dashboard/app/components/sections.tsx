@@ -18,7 +18,7 @@ export function MarketOverview({ snapshot }: { snapshot: Snapshot }) {
 
   return (
     <Section title="Market overview" hint="change vs previous close">
-      <div className="grid">
+      <div className="grid-compact">
         {entries.map(([group, quotes]) => (
           <Card key={group} title={GROUP_TITLES[group] ?? titleCase(group)}>
             <div className="tiles">
@@ -96,25 +96,36 @@ export function Watchlist({ rows }: { rows: WatchRow[] }) {
   );
 }
 
-function ScanList({ rows }: { rows: ScanRow[] }) {
+const SCAN_ROWS_SHOWN = 8;
+
+function ScanList({ rows, matched }: { rows: ScanRow[]; matched: number }) {
   if (!rows.length) return <Empty>No matches.</Empty>;
+
+  const shown = rows.slice(0, SCAN_ROWS_SHOWN);
+  // The card header states the full count, so say plainly when the list under
+  // it is only part of that rather than letting the two numbers disagree.
+  const hidden = matched - shown.length;
+
   return (
-    <table>
-      <tbody>
-        {rows.slice(0, 8).map((r) => (
-          <tr key={r.symbol}>
-            <td>
-              <span className="sym">{r.symbol}</span>
-            </td>
-            <td>{price(r.price)}</td>
-            <td>{num(r.rsi_14, 0)}</td>
-            <td>
-              <Rating label={r.rating} />
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <>
+      <table>
+        <tbody>
+          {shown.map((r) => (
+            <tr key={r.symbol}>
+              <td>
+                <span className="sym">{r.symbol}</span>
+              </td>
+              <td>{price(r.price)}</td>
+              <td>{num(r.rsi_14, 0)}</td>
+              <td>
+                <Rating label={r.rating} />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {hidden > 0 ? <Empty>+{hidden} more not shown</Empty> : null}
+    </>
   );
 }
 
@@ -142,7 +153,7 @@ export function Scans({ snapshot }: { snapshot: Snapshot }) {
             <div className="grid">
               {signals.map(([signal, payload]) => (
                 <Card key={signal} title={`${titleCase(signal)} · ${payload.matched}`}>
-                  <ScanList rows={payload.results} />
+                  <ScanList rows={payload.results} matched={payload.matched} />
                   <Empty>{payload.criterion}</Empty>
                 </Card>
               ))}

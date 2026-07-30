@@ -289,7 +289,9 @@ async def build_snapshot(quick: bool) -> dict[str, Any]:
 
     print("building snapshot...")
     market = await rec.run("market_overview", build_market_overview, {})
-    crypto = await rec.run("crypto", lambda: build_crypto(25), {})
+    # The scan draws its symbols from this list, so it must be at least as long
+    # as the scan size or the scan silently shrinks to whatever was fetched.
+    crypto = await rec.run("crypto", lambda: build_crypto(max(25, crypto_size)), {})
     idx_data = await rec.run("idx", lambda: build_idx(idx_size), {})
 
     crypto_symbols = [p["symbol"] for p in (crypto.get("by_volume") or [])[:crypto_size]]

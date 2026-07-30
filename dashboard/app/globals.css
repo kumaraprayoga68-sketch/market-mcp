@@ -178,6 +178,14 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 
+/* Market overview: narrower columns so all five groups sit on one row at
+   desktop width instead of leaving a single orphaned card below. */
+.grid-compact {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+}
+
 .card {
   background: var(--bg-raised);
   border: 1px solid var(--border);
@@ -199,8 +207,10 @@ a:hover {
 
 .tiles {
   display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  /* Must be narrow enough that two fit inside a grid-compact card, otherwise
+     tiles stack single-file and card heights go ragged. */
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
 }
 
 .tile {
