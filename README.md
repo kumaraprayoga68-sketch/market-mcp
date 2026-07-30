@@ -1,7 +1,9 @@
 # market-mcp
 
 An MCP server that gives an AI assistant real market data, technical analysis,
-prediction-market odds and an honest strategy backtester.
+prediction-market odds and an honest strategy backtester — plus a scheduled
+scanner that feeds a [live dashboard](https://market-mcp-dashboard.vercel.app)
+and Telegram alerts.
 
 Covers four things in one server:
 
@@ -129,14 +131,28 @@ dashboard shows them rather than pretending the data is complete.
 
 ### Dashboard
 
+**Live: [market-mcp-dashboard.vercel.app](https://market-mcp-dashboard.vercel.app)**
+
 `dashboard/` is a Next.js app with no UI dependencies beyond React.
 
 ```bash
 cd dashboard && npm install && npm run dev
 ```
 
-To deploy: import the repo on Vercel and set **Root Directory** to `dashboard`.
-Point it at a different data source with the `SNAPSHOT_URL` environment variable.
+It fetches `snapshots/latest.json` over HTTP with a 5-minute revalidate, so new
+scan data appears on its own. Only code changes need a redeploy:
+
+```bash
+cd dashboard && vercel deploy --prod
+```
+
+To get automatic deploys on every code push, connect the repository under
+**Project Settings → Git** and set **Root Directory** to `dashboard`. That last
+part matters and cannot be set from the CLI: without it Vercel builds from the
+repository root, finds no `package.json`, and the build fails.
+
+Point the dashboard at a different data source with the `SNAPSHOT_URL`
+environment variable.
 
 ---
 
