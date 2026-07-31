@@ -29,17 +29,37 @@ STABLE_QUOTES = ("USDT", "USDC", "FDUSD", "BUSD")
 PEGGED_BASES = frozenset({"DAI", "EURI", "EURT", "AEUR", "XUSD", "FRAX", "LUSD"})
 
 
+# Errors that mean "this host cannot serve us" rather than "this request is
+# wrong". Only these are worth retrying against a different host.
+_FAILOVER_CODES = frozenset({"geo_blocked", "upstream_error", "timeout", "rate_limited"})
+
+# Once a host answers, keep using it first. api.binance.com returns HTTP 451 to
+# whole regions (US cloud providers among them), and without this every single
+# call would pay for that rejection before falling through to the mirror.
+_preferred_host: str | None = None
+
+
 async def _get(path: str, params: dict[str, Any] | None = None) -> Any:
+    global _preferred_host
+
+    hosts = list(HOSTS)
+    if _preferred_host in hosts:
+        hosts.remove(_preferred_host)
+        hosts.insert(0, _preferred_host)
+
     last: ToolError | None = None
-    for host in HOSTS:
+    for host in hosts:
         try:
-            return await fetch_json(f"{host}{path}", params=params, source="Binance")
+            result = await fetch_json(f"{host}{path}", params=params, source="Binance")
         except ToolError as e:
-            # A rejected symbol is our fault and will be rejected by the mirror
-            # too; only connectivity problems are worth failing over.
-            if e.code in ("bad_input", "not_found"):
+            # A rejected symbol is our fault and the mirror would reject it too.
+            if e.code not in _FAILOVER_CODES:
                 raise
             last = e
+            continue
+        _preferred_host = host
+        return result
+
     raise last or ToolError("upstream_error", "Binance unreachable")
 
 

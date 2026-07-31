@@ -18,6 +18,7 @@ ErrorCode = Literal[
     "upstream_error",
     "rate_limited",
     "timeout",
+    "geo_blocked",
     "internal",
 ]
 

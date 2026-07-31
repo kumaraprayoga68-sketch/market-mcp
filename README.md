@@ -277,6 +277,12 @@ for anything in the registry.
 
 ## Limits
 
+- **Binance geo-blocks US cloud regions.** `api.binance.com` answers HTTP 451
+  from GitHub Actions runners and Vercel functions alike (verified from `iad1`).
+  The provider fails over to `data-api.binance.vision`, which serves the same
+  market-data routes from those regions and is remembered for the rest of the
+  process. If you host this somewhere new and crypto sections come back empty,
+  check for 451 before suspecting anything else.
 - Yahoo caps intraday history (7 days of 1-minute bars, 60 days of sub-hourly).
 - Polymarket has no server-side text search, so `prediction_search` scans the
   most active markets rather than every market ever created.

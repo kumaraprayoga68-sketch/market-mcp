@@ -104,9 +104,18 @@ async def fetch_json(
                 last = f"{source} returned HTTP {resp.status_code}"
                 if attempt == attempts:
                     raise ToolError("upstream_error", last)
+            elif resp.status_code == 451:
+                # "Unavailable for legal reasons" — the venue is refusing this
+                # region, not this request. Retrying the same host is pointless,
+                # but a different host may well be reachable, so this gets its
+                # own code for callers that keep mirrors.
+                raise ToolError(
+                    "geo_blocked",
+                    f"{source} refuses requests from this region (HTTP 451)",
+                )
             elif resp.status_code >= 400:
-                # 4xx other than the two handled above means we sent something
-                # wrong; retrying the identical request cannot help.
+                # Other 4xx means we sent something wrong; retrying the
+                # identical request cannot help.
                 raise ToolError(
                     "bad_input",
                     f"{source} rejected the request (HTTP {resp.status_code}): "
