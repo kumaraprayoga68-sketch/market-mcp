@@ -10,8 +10,17 @@ export const REPO = "kumaraprayoga68-sketch/market-mcp";
 
 const DEFAULT_URL = `https://raw.githubusercontent.com/${REPO}/main/snapshots/latest.json`;
 
-/** How long a rendered page may serve stale data, in seconds. */
-export const REVALIDATE = 300;
+/**
+ * The snapshot fetch is deliberately uncached (`cache: "no-store"` below).
+ *
+ * A `revalidate` window means stale-while-revalidate: once it expires, the next
+ * visitor is served the OLD page and their request is merely what triggers
+ * regeneration. On a low-traffic personal dashboard you are almost always that
+ * visitor, so you would routinely read the previous scan while believing it was
+ * current — which defeats a page built around how fresh its data is.
+ *
+ * The cost is one ~80 KB fetch per view, which is nothing here.
+ */
 
 export type Quote = {
   name?: string;
@@ -131,7 +140,7 @@ export type LoadResult =
 export async function loadSnapshot(): Promise<LoadResult> {
   const source = process.env.SNAPSHOT_URL || DEFAULT_URL;
   try {
-    const res = await fetch(source, { next: { revalidate: REVALIDATE } });
+    const res = await fetch(source, { cache: "no-store" });
     if (!res.ok) {
       return {
         ok: false,

@@ -1,11 +1,11 @@
 import { relativeAge } from "@/lib/format";
-import { loadSnapshot, REPO, REVALIDATE } from "@/lib/snapshot";
+import { loadSnapshot, REPO } from "@/lib/snapshot";
 import { Backtests, MarketOverview, Movers, Prediction, Scans, Watchlist } from "./components/sections";
 
-// No segment-level `revalidate` export: the snapshot fetch in loadSnapshot()
-// already carries `next: { revalidate }`, which is what puts this route on ISR.
-// Next also rejects an imported identifier there, so duplicating the number as
-// a literal would just be a constant waiting to drift.
+// Rendered per request. `cache: "no-store"` on the snapshot fetch already forces
+// this, but saying it here keeps the intent obvious: a page whose headline fact
+// is how old its data is must never be served from a cache.
+export const dynamic = "force-dynamic";
 
 export default async function Page() {
   const result = await loadSnapshot();
@@ -27,7 +27,7 @@ export default async function Page() {
             <li>
               Select <b>Scheduled scan</b> and click <b>Run workflow</b>
             </li>
-            <li>This page picks up the result within {Math.round(REVALIDATE / 60)} minutes</li>
+            <li>Reload this page once it finishes</li>
           </ul>
         </div>
         <Footer source={result.source} />
