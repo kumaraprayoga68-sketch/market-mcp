@@ -1,0 +1,2745 @@
+{
+  "generated_at": "2026-11-16T12:12:23",
+  "duration_seconds": 5.9,
+  "quick_mode": false,
+  "market": {
+    "groups": {
+      "us_equity": [
+        {
+          "name": "S&P 500",
+          "symbol": "^GSPC",
+          "price": 7561.67,
+          "change_pct": -0.404746,
+          "currency": "USD"
+        },
+        {
+          "name": "Nasdaq",
+          "symbol": "^IXIC",
+          "price": 25136.273,
+          "change_pct": -0.906,
+          "currency": "USD"
+        },
+        {
+          "name": "Dow Jones",
+          "symbol": "^DJI",
+          "price": 52347.55,
+          "change_pct": 0.096488,
+          "currency": "USD"
+        }
+      ],
+      "volatility": [
+        {
+          "name": "VIX",
+          "symbol": "^VIX",
+          "price": 20.01,
+          "change_pct": 3.678761,
+          "currency": "USD"
+        }
+      ],
+      "asia": [
+        {
+          "name": "IDX Composite",
+          "symbol": "^JKSE",
+          "price": 5320.981,
+          "change_pct": -0.438304,
+          "currency": "IDR"
+        },
+        {
+          "name": "Nikkei 225",
+          "symbol": "^N225",
+          "price": 59662.02,
+          "change_pct": -2.421123,
+          "currency": "JPY"
+        },
+        {
+          "name": "Hang Seng",
+          "symbol": "^HSI",
+          "price": 23753.84,
+          "change_pct": 0.491761,
+          "currency": "HKD"
+        }
+      ],
+      "crypto": [
+        {
+          "name": "Bitcoin",
+          "symbol": "BTC-USD",
+          "price": 63962.68,
+          "change_pct": -2.055557,
+          "currency": "USD"
+        },
+        {
+          "name": "Ethereum",
+          "symbol": "ETH-USD",
+          "price": 1793.92,
+          "change_pct": -2.265069,
+          "currency": "USD"
+        }
+      ],
+      "fx_commodity": [
+        {
+          "name": "USD/IDR",
+          "symbol": "USDIDR=X",
+          "price": 18250.0,
+          "change_pct": 3.498536,
+          "currency": "IDR"
+        },
+        {
+          "name": "Gold",
+          "symbol": "GC=F",
+          "price": 3877.0,
+          "change_pct": -0.239303,
+          "currency": "USD"
+        },
+        {
+          "name": "Crude Oil",
+          "symbol": "CL=F",
+          "price": 87.99,
+          "change_pct": -0.643629,
+          "currency": "USD"
+        }
+      ]
+    },
+    "biggest_movers": [
+      {
+        "name": "VIX",
+        "symbol": "^VIX",
+        "price": 20.01,
+        "change_pct": 3.678761,
+        "currency": "USD"
+      },
+      {
+        "name": "USD/IDR",
+        "symbol": "USDIDR=X",
+        "price": 18250.0,
+        "change_pct": 3.498536,
+        "currency": "IDR"
+      },
+      {
+        "name": "Nikkei 225",
+        "symbol": "^N225",
+        "price": 59662.02,
+        "change_pct": -2.421123,
+        "currency": "JPY"
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH-USD",
+        "price": 1793.92,
+        "change_pct": -2.265069,
+        "currency": "USD"
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC-USD",
+        "price": 63962.68,
+        "change_pct": -2.055557,
+        "currency": "USD"
+      }
+    ]
+  },
+  "crypto": {
+    "universe_size": 38,
+    "by_volume": [
+      {
+        "symbol": "BTCUSDT",
+        "base": "BTC",
+        "price": 64042.67,
+        "change_pct": -2.001,
+        "high_24h": 65800.75,
+        "low_24h": 64039.36,
+        "volume_quote_24h": 1249310754.97184,
+        "trades_24h": 4794588
+      },
+      {
+        "symbol": "ETHUSDT",
+        "base": "ETH",
+        "price": 1796.01,
+        "change_pct": -1.608,
+        "high_24h": 1842.85,
+        "low_24h": 1791.41,
+        "volume_quote_24h": 503226723.657783,
+        "trades_24h": 2396678
+      },
+      {
+        "symbol": "SOLUSDT",
+        "base": "SOL",
+        "price": 70.91,
+        "change_pct": -2.153,
+        "high_24h": 73.28,
+        "low_24h": 70.45,
+        "volume_quote_24h": 212133505.5862,
+        "trades_24h": 727618
+      },
+      {
+        "symbol": "ZECUSDT",
+        "base": "ZEC",
+        "price": 877.01,
+        "change_pct": -4.482,
+        "high_24h": 925.27,
+        "low_24h": 872.47,
+        "volume_quote_24h": 113493702.39532,
+        "trades_24h": 452363
+      },
+      {
+        "symbol": "XRPUSDT",
+        "base": "XRP",
+        "price": 0.95,
+        "change_pct": -1.565,
+        "high_24h": 0.9783,
+        "low_24h": 0.9424,
+        "volume_quote_24h": 101818562.88677,
+        "trades_24h": 538272
+      },
+      {
+        "symbol": "NVDABUSDT",
+        "base": "NVDAB",
+        "price": 157.22,
+        "change_pct": -2.05,
+        "high_24h": 166.87,
+        "low_24h": 156.65,
+        "volume_quote_24h": 62193539.29139,
+        "trades_24h": 456326
+      },
+      {
+        "symbol": "BNBUSDT",
+        "base": "BNB",
+        "price": 587.08,
+        "change_pct": -1.614,
+        "high_24h": 598.7,
+        "low_24h": 586.0,
+        "volume_quote_24h": 61680754.70164,
+        "trades_24h": 518664
+      },
+      {
+        "symbol": "ASTERUSDT",
+        "base": "ASTER",
+        "price": 0.5369,
+        "change_pct": 0.393,
+        "high_24h": 0.7124,
+        "low_24h": 0.4812,
+        "volume_quote_24h": 58512722.868812,
+        "trades_24h": 802826
+      },
+      {
+        "symbol": "HYPEUSDT",
+        "base": "HYPE",
+        "price": 65.59,
+        "change_pct": -3.416,
+        "high_24h": 68.68,
+        "low_24h": 65.41,
+        "volume_quote_24h": 44890653.38382,
+        "trades_24h": 214818
+      },
+      {
+        "symbol": "SOXLBUSDT",
+        "base": "SOXLB",
+        "price": 51.2,
+        "change_pct": -6.501,
+        "high_24h": 59.23,
+        "low_24h": 51.0,
+        "volume_quote_24h": 39902598.96791,
+        "trades_24h": 182993
+      },
+      {
+        "symbol": "NEARUSDT",
+        "base": "NEAR",
+        "price": 3.171,
+        "change_pct": -0.377,
+        "high_24h": 3.242,
+        "low_24h": 3.1,
+        "volume_quote_24h": 39780163.0419,
+        "trades_24h": 197126
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "base": "DOGE",
+        "price": 0.05835,
+        "change_pct": -1.302,
+        "high_24h": 0.06012,
+        "low_24h": 0.0581,
+        "volume_quote_24h": 36485349.50344,
+        "trades_24h": 384987
+      },
+      {
+        "symbol": "PEPEUSDT",
+        "base": "PEPE",
+        "price": 4e-06,
+        "change_pct": -6.203,
+        "high_24h": 4e-06,
+        "low_24h": 4e-06,
+        "volume_quote_24h": 30178571.088966,
+        "trades_24h": 95166
+      },
+      {
+        "symbol": "SPCXBUSDT",
+        "base": "SPCXB",
+        "price": 139.7,
+        "change_pct": 1.005,
+        "high_24h": 140.92,
+        "low_24h": 138.18,
+        "volume_quote_24h": 29780119.59203,
+        "trades_24h": 61021
+      },
+      {
+        "symbol": "UNIUSDT",
+        "base": "UNI",
+        "price": 5.098,
+        "change_pct": -1.412,
+        "high_24h": 5.257,
+        "low_24h": 5.07,
+        "volume_quote_24h": 24877842.54258,
+        "trades_24h": 114481
+      },
+      {
+        "symbol": "MUBUSDT",
+        "base": "MUB",
+        "price": 737.36,
+        "change_pct": -2.502,
+        "high_24h": 792.84,
+        "low_24h": 735.36,
+        "volume_quote_24h": 23171525.81305,
+        "trades_24h": 161257
+      },
+      {
+        "symbol": "XAUTUSDT",
+        "base": "XAUT",
+        "price": 3855.85,
+        "change_pct": 0.823,
+        "high_24h": 3883.36,
+        "low_24h": 3815.82,
+        "volume_quote_24h": 22524033.087904,
+        "trades_24h": 56859
+      },
+      {
+        "symbol": "RAREUSDT",
+        "base": "RARE",
+        "price": 0.01538,
+        "change_pct": 77.803,
+        "high_24h": 0.01687,
+        "low_24h": 0.00841,
+        "volume_quote_24h": 20576369.501351,
+        "trades_24h": 394309
+      },
+      {
+        "symbol": "TRXUSDT",
+        "base": "TRX",
+        "price": 0.3048,
+        "change_pct": -1.519,
+        "high_24h": 0.3095,
+        "low_24h": 0.3023,
+        "volume_quote_24h": 20307025.76343,
+        "trades_24h": 51100
+      },
+      {
+        "symbol": "SUIUSDT",
+        "base": "SUI",
+        "price": 0.7161,
+        "change_pct": -2.025,
+        "high_24h": 0.7401,
+        "low_24h": 0.7141,
+        "volume_quote_24h": 19578703.93065,
+        "trades_24h": 174881
+      },
+      {
+        "symbol": "ENAUSDT",
+        "base": "ENA",
+        "price": 0.1163,
+        "change_pct": -3.884,
+        "high_24h": 0.1222,
+        "low_24h": 0.116,
+        "volume_quote_24h": 19229554.266012,
+        "trades_24h": 105739
+      },
+      {
+        "symbol": "UUSDT",
+        "base": "U",
+        "price": 1.0003,
+        "change_pct": 0.02,
+        "high_24h": 1.0004,
+        "low_24h": 0.9999,
+        "volume_quote_24h": 17530702.1376,
+        "trades_24h": 19051
+      },
+      {
+        "symbol": "ADAUSDT",
+        "base": "ADA",
+        "price": 0.1514,
+        "change_pct": -2.886,
+        "high_24h": 0.1567,
+        "low_24h": 0.1511,
+        "volume_quote_24h": 15207631.46926,
+        "trades_24h": 86397
+      },
+      {
+        "symbol": "GOOGLBUSDT",
+        "base": "GOOGLB",
+        "price": 294.52,
+        "change_pct": 0.615,
+        "high_24h": 297.85,
+        "low_24h": 290.82,
+        "volume_quote_24h": 15172447.07623,
+        "trades_24h": 160730
+      },
+      {
+        "symbol": "QQQBUSDT",
+        "base": "QQQB",
+        "price": 671.01,
+        "change_pct": -0.217,
+        "high_24h": 684.36,
+        "low_24h": 669.91,
+        "volume_quote_24h": 14637425.88666,
+        "trades_24h": 139093
+      },
+      {
+        "symbol": "KORUBUSDT",
+        "base": "KORUB",
+        "price": 6.94,
+        "change_pct": -3.073,
+        "high_24h": 7.88,
+        "low_24h": 6.92,
+        "volume_quote_24h": 14161822.2196,
+        "trades_24h": 65865
+      },
+      {
+        "symbol": "INTCBUSDT",
+        "base": "INTCB",
+        "price": 56.56,
+        "change_pct": -2.264,
+        "high_24h": 59.79,
+        "low_24h": 56.52,
+        "volume_quote_24h": 13269759.12974,
+        "trades_24h": 102845
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "base": "AVAX",
+        "price": 7.082,
+        "change_pct": -2.236,
+        "high_24h": 7.342,
+        "low_24h": 7.072,
+        "volume_quote_24h": 12892719.32881,
+        "trades_24h": 146340
+      },
+      {
+        "symbol": "SKHYBUSDT",
+        "base": "SKHYB",
+        "price": 124.18,
+        "change_pct": -3.989,
+        "high_24h": 134.4,
+        "low_24h": 124.14,
+        "volume_quote_24h": 12670844.83698,
+        "trades_24h": 77849
+      },
+      {
+        "symbol": "LINKUSDT",
+        "base": "LINK",
+        "price": 9.1,
+        "change_pct": -1.707,
+        "high_24h": 9.374,
+        "low_24h": 9.045,
+        "volume_quote_24h": 12669702.03967,
+        "trades_24h": 167073
+      },
+      {
+        "symbol": "INITUSDT",
+        "base": "INIT",
+        "price": 0.102,
+        "change_pct": -26.539,
+        "high_24h": 0.14,
+        "low_24h": 0.10046,
+        "volume_quote_24h": 11770695.13053,
+        "trades_24h": 200395
+      },
+      {
+        "symbol": "MSTRBUSDT",
+        "base": "MSTRB",
+        "price": 102.35,
+        "change_pct": 1.578,
+        "high_24h": 104.76,
+        "low_24h": 98.53,
+        "volume_quote_24h": 11289687.19592,
+        "trades_24h": 34363
+      },
+      {
+        "symbol": "PAXGUSDT",
+        "base": "PAXG",
+        "price": 3857.4,
+        "change_pct": 0.766,
+        "high_24h": 3887.59,
+        "low_24h": 3818.42,
+        "volume_quote_24h": 10875845.149384,
+        "trades_24h": 68568
+      },
+      {
+        "symbol": "SHELLUSDT",
+        "base": "SHELL",
+        "price": 0.02639,
+        "change_pct": 3.734,
+        "high_24h": 0.0352,
+        "low_24h": 0.02426,
+        "volume_quote_24h": 10639032.148776,
+        "trades_24h": 208080
+      },
+      {
+        "symbol": "LTCUSDT",
+        "base": "LTC",
+        "price": 44.23,
+        "change_pct": -2.405,
+        "high_24h": 45.67,
+        "low_24h": 44.15,
+        "volume_quote_24h": 10577879.17274,
+        "trades_24h": 123961
+      },
+      {
+        "symbol": "SOPHUSDT",
+        "base": "SOPH",
+        "price": 0.00094,
+        "change_pct": -43.373,
+        "high_24h": 0.00176,
+        "low_24h": 0.00083,
+        "volume_quote_24h": 10344240.37623,
+        "trades_24h": 84861
+      },
+      {
+        "symbol": "TAOUSDT",
+        "base": "TAO",
+        "price": 187.6,
+        "change_pct": -2.848,
+        "high_24h": 196.2,
+        "low_24h": 187.4,
+        "volume_quote_24h": 10282682.88358,
+        "trades_24h": 68360
+      },
+      {
+        "symbol": "AAVEUSDT",
+        "base": "AAVE",
+        "price": 108.6,
+        "change_pct": 1.098,
+        "high_24h": 110.45,
+        "low_24h": 105.72,
+        "volume_quote_24h": 10104158.01807,
+        "trades_24h": 87388
+      }
+    ],
+    "gainers": [
+      {
+        "symbol": "RAREUSDT",
+        "base": "RARE",
+        "price": 0.01538,
+        "change_pct": 77.803,
+        "high_24h": 0.01687,
+        "low_24h": 0.00841,
+        "volume_quote_24h": 20576369.501351,
+        "trades_24h": 394309
+      },
+      {
+        "symbol": "SHELLUSDT",
+        "base": "SHELL",
+        "price": 0.02639,
+        "change_pct": 3.734,
+        "high_24h": 0.0352,
+        "low_24h": 0.02426,
+        "volume_quote_24h": 10639032.148776,
+        "trades_24h": 208080
+      },
+      {
+        "symbol": "MSTRBUSDT",
+        "base": "MSTRB",
+        "price": 102.35,
+        "change_pct": 1.578,
+        "high_24h": 104.76,
+        "low_24h": 98.53,
+        "volume_quote_24h": 11289687.19592,
+        "trades_24h": 34363
+      },
+      {
+        "symbol": "AAVEUSDT",
+        "base": "AAVE",
+        "price": 108.6,
+        "change_pct": 1.098,
+        "high_24h": 110.45,
+        "low_24h": 105.72,
+        "volume_quote_24h": 10104158.01807,
+        "trades_24h": 87388
+      },
+      {
+        "symbol": "SPCXBUSDT",
+        "base": "SPCXB",
+        "price": 139.7,
+        "change_pct": 1.005,
+        "high_24h": 140.92,
+        "low_24h": 138.18,
+        "volume_quote_24h": 29780119.59203,
+        "trades_24h": 61021
+      },
+      {
+        "symbol": "XAUTUSDT",
+        "base": "XAUT",
+        "price": 3855.85,
+        "change_pct": 0.823,
+        "high_24h": 3883.36,
+        "low_24h": 3815.82,
+        "volume_quote_24h": 22524033.087904,
+        "trades_24h": 56859
+      },
+      {
+        "symbol": "PAXGUSDT",
+        "base": "PAXG",
+        "price": 3857.4,
+        "change_pct": 0.766,
+        "high_24h": 3887.59,
+        "low_24h": 3818.42,
+        "volume_quote_24h": 10875845.149384,
+        "trades_24h": 68568
+      },
+      {
+        "symbol": "GOOGLBUSDT",
+        "base": "GOOGLB",
+        "price": 294.52,
+        "change_pct": 0.615,
+        "high_24h": 297.85,
+        "low_24h": 290.82,
+        "volume_quote_24h": 15172447.07623,
+        "trades_24h": 160730
+      },
+      {
+        "symbol": "ASTERUSDT",
+        "base": "ASTER",
+        "price": 0.5369,
+        "change_pct": 0.393,
+        "high_24h": 0.7124,
+        "low_24h": 0.4812,
+        "volume_quote_24h": 58512722.868812,
+        "trades_24h": 802826
+      },
+      {
+        "symbol": "UUSDT",
+        "base": "U",
+        "price": 1.0003,
+        "change_pct": 0.02,
+        "high_24h": 1.0004,
+        "low_24h": 0.9999,
+        "volume_quote_24h": 17530702.1376,
+        "trades_24h": 19051
+      }
+    ],
+    "losers": [
+      {
+        "symbol": "SOPHUSDT",
+        "base": "SOPH",
+        "price": 0.00094,
+        "change_pct": -43.373,
+        "high_24h": 0.00176,
+        "low_24h": 0.00083,
+        "volume_quote_24h": 10344240.37623,
+        "trades_24h": 84861
+      },
+      {
+        "symbol": "INITUSDT",
+        "base": "INIT",
+        "price": 0.102,
+        "change_pct": -26.539,
+        "high_24h": 0.14,
+        "low_24h": 0.10046,
+        "volume_quote_24h": 11770695.13053,
+        "trades_24h": 200395
+      },
+      {
+        "symbol": "SOXLBUSDT",
+        "base": "SOXLB",
+        "price": 51.2,
+        "change_pct": -6.501,
+        "high_24h": 59.23,
+        "low_24h": 51.0,
+        "volume_quote_24h": 39902598.96791,
+        "trades_24h": 182993
+      },
+      {
+        "symbol": "PEPEUSDT",
+        "base": "PEPE",
+        "price": 4e-06,
+        "change_pct": -6.203,
+        "high_24h": 4e-06,
+        "low_24h": 4e-06,
+        "volume_quote_24h": 30178571.088966,
+        "trades_24h": 95166
+      },
+      {
+        "symbol": "ZECUSDT",
+        "base": "ZEC",
+        "price": 877.01,
+        "change_pct": -4.482,
+        "high_24h": 925.27,
+        "low_24h": 872.47,
+        "volume_quote_24h": 113493702.39532,
+        "trades_24h": 452363
+      },
+      {
+        "symbol": "SKHYBUSDT",
+        "base": "SKHYB",
+        "price": 124.18,
+        "change_pct": -3.989,
+        "high_24h": 134.4,
+        "low_24h": 124.14,
+        "volume_quote_24h": 12670844.83698,
+        "trades_24h": 77849
+      },
+      {
+        "symbol": "ENAUSDT",
+        "base": "ENA",
+        "price": 0.1163,
+        "change_pct": -3.884,
+        "high_24h": 0.1222,
+        "low_24h": 0.116,
+        "volume_quote_24h": 19229554.266012,
+        "trades_24h": 105739
+      },
+      {
+        "symbol": "HYPEUSDT",
+        "base": "HYPE",
+        "price": 65.59,
+        "change_pct": -3.416,
+        "high_24h": 68.68,
+        "low_24h": 65.41,
+        "volume_quote_24h": 44890653.38382,
+        "trades_24h": 214818
+      },
+      {
+        "symbol": "KORUBUSDT",
+        "base": "KORUB",
+        "price": 6.94,
+        "change_pct": -3.073,
+        "high_24h": 7.88,
+        "low_24h": 6.92,
+        "volume_quote_24h": 14161822.2196,
+        "trades_24h": 65865
+      },
+      {
+        "symbol": "ADAUSDT",
+        "base": "ADA",
+        "price": 0.1514,
+        "change_pct": -2.886,
+        "high_24h": 0.1567,
+        "low_24h": 0.1511,
+        "volume_quote_24h": 15207631.46926,
+        "trades_24h": 86397
+      }
+    ]
+  },
+  "idx": {
+    "scanned": 40,
+    "gainers": [
+      {
+        "symbol": "PNBN.JK",
+        "name": "PT Bank Pan Indonesia Tbk",
+        "price": 745.0,
+        "change_pct": 2.758621,
+        "volume": 1721600
+      },
+      {
+        "symbol": "BANK.JK",
+        "name": "PT Bank Aladin Syariah Tbk",
+        "price": 164.0,
+        "change_pct": 2.5,
+        "volume": 889100
+      },
+      {
+        "symbol": "BBTN.JK",
+        "name": "PT Bank Tabungan Negara (Persero) Tbk",
+        "price": 1020.0,
+        "change_pct": 2.0,
+        "volume": 19877600
+      },
+      {
+        "symbol": "BBNI.JK",
+        "name": "PT Bank Negara Indonesia (Persero) Tbk",
+        "price": 3600.0,
+        "change_pct": 1.983003,
+        "volume": 26778700
+      },
+      {
+        "symbol": "PNLF.JK",
+        "name": "PT Panin Financial Tbk",
+        "price": 166.0,
+        "change_pct": 1.840491,
+        "volume": 28043400
+      },
+      {
+        "symbol": "BBCA.JK",
+        "name": "PT Bank Central Asia Tbk",
+        "price": 5600.0,
+        "change_pct": 1.818182,
+        "volume": 159642400
+      },
+      {
+        "symbol": "MCOR.JK",
+        "name": "PT Bank China Construction Bank Indonesia Tbk",
+        "price": 58.0,
+        "change_pct": 1.754386,
+        "volume": 1598800
+      },
+      {
+        "symbol": "BBRI.JK",
+        "name": "PT Bank Rakyat Indonesia (Persero) Tbk",
+        "price": 3100.0,
+        "change_pct": 1.30719,
+        "volume": 241224900
+      },
+      {
+        "symbol": "BNGA.JK",
+        "name": "PT Bank CIMB Niaga Tbk",
+        "price": 1565.0,
+        "change_pct": 1.294498,
+        "volume": 3684500
+      },
+      {
+        "symbol": "TLKM.JK",
+        "name": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
+        "price": 2180.0,
+        "change_pct": 0.925926,
+        "volume": 146496600
+      }
+    ],
+    "losers": [
+      {
+        "symbol": "BFIN.JK",
+        "name": "PT BFI Finance Indonesia Tbk",
+        "price": 775.0,
+        "change_pct": -3.125,
+        "volume": 9074700
+      },
+      {
+        "symbol": "BBKP.JK",
+        "name": "PT Bank KB Indonesia Tbk",
+        "price": 34.0,
+        "change_pct": -2.857143,
+        "volume": 29631400
+      },
+      {
+        "symbol": "ARTO.JK",
+        "name": "PT Bank Jago Tbk",
+        "price": 530.0,
+        "change_pct": -2.752294,
+        "volume": 5229600
+      },
+      {
+        "symbol": "BBSI.JK",
+        "name": "PT Krom Bank Indonesia Tbk",
+        "price": 2930.0,
+        "change_pct": -2.657807,
+        "volume": 95900
+      },
+      {
+        "symbol": "SRTG.JK",
+        "name": "PT Saratoga Investama Sedaya Tbk",
+        "price": 1675.0,
+        "change_pct": -2.616279,
+        "volume": 2440300
+      },
+      {
+        "symbol": "AMAR.JK",
+        "name": "PT Bank Amar Indonesia Tbk",
+        "price": 187.0,
+        "change_pct": -2.604167,
+        "volume": 70800
+      },
+      {
+        "symbol": "BSIM.JK",
+        "name": "PT Bank Sinarmas Tbk",
+        "price": 800.0,
+        "change_pct": -2.439024,
+        "volume": 13600
+      },
+      {
+        "symbol": "BRIS.JK",
+        "name": "PT Bank Syariah Indonesia Tbk",
+        "price": 1120.0,
+        "change_pct": -1.754386,
+        "volume": 67045100
+      },
+      {
+        "symbol": "BVIC.JK",
+        "name": "PT Bank Victoria International Tbk",
+        "price": 72.0,
+        "change_pct": -1.369863,
+        "volume": 1450400
+      },
+      {
+        "symbol": "SDRA.JK",
+        "name": "PT Bank Woori Saudara Indonesia 1906 Tbk",
+        "price": 162.0,
+        "change_pct": -1.219512,
+        "volume": 649000
+      }
+    ]
+  },
+  "scans": {
+    "crypto": {
+      "oversold": {
+        "criterion": "RSI below 30",
+        "matched": 12,
+        "results": [
+          {
+            "symbol": "SOLUSDT",
+            "price": 70.87,
+            "rsi_14": 19.931791,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.59,
+            "adx_14": 46.8
+          },
+          {
+            "symbol": "DOGEUSDT",
+            "price": 0.05833,
+            "rsi_14": 25.136529,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.52,
+            "adx_14": 44.1
+          },
+          {
+            "symbol": "ADAUSDT",
+            "price": 0.1513,
+            "rsi_14": 26.92778,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.56,
+            "adx_14": 40.9
+          },
+          {
+            "symbol": "LTCUSDT",
+            "price": 44.23,
+            "rsi_14": 27.141965,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.43,
+            "adx_14": 41.4
+          },
+          {
+            "symbol": "NVDABUSDT",
+            "price": 157.2,
+            "rsi_14": 28.112693,
+            "rating": "weak_sell",
+            "rating_score": -0.5,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 1.03,
+            "adx_14": 46.8
+          },
+          {
+            "symbol": "ASTERUSDT",
+            "price": 0.537,
+            "rsi_14": 29.721061,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 1.73,
+            "adx_14": 35.1
+          },
+          {
+            "symbol": "XRPUSDT",
+            "price": 0.9496,
+            "rsi_14": 25.536898,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.51,
+            "adx_14": 35.2
+          },
+          {
+            "symbol": "BTCUSDT",
+            "price": 64022.73,
+            "rsi_14": 22.726233,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.59,
+            "adx_14": 34.1
+          },
+          {
+            "symbol": "BNBUSDT",
+            "price": 587.0,
+            "rsi_14": 25.066529,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.36,
+            "adx_14": 38.4
+          },
+          {
+            "symbol": "ETHUSDT",
+            "price": 1795.4,
+            "rsi_14": 24.686716,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.45,
+            "adx_14": 35.0
+          },
+          {
+            "symbol": "ENAUSDT",
+            "price": 0.1163,
+            "rsi_14": 28.450432,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.49,
+            "adx_14": 34.4
+          },
+          {
+            "symbol": "MSTRBUSDT",
+            "price": 102.34,
+            "rsi_14": 29.090855,
+            "rating": "neutral",
+            "rating_score": 0.0,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.73,
+            "adx_14": 28.0
+          }
+        ]
+      },
+      "overbought": {
+        "criterion": "RSI above 70",
+        "matched": 0,
+        "results": []
+      },
+      "uptrend": {
+        "criterion": "price above the 200-EMA with Supertrend pointing up",
+        "matched": 2,
+        "results": [
+          {
+            "symbol": "SHELLUSDT",
+            "price": 0.02639,
+            "rsi_14": 54.448358,
+            "rating": "buy",
+            "rating_score": 0.571,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 1.02,
+            "adx_14": 32.1
+          },
+          {
+            "symbol": "RAREUSDT",
+            "price": 0.01534,
+            "rsi_14": 64.575632,
+            "rating": "neutral",
+            "rating_score": 0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 7.19,
+            "adx_14": 20.6
+          }
+        ]
+      },
+      "downtrend": {
+        "criterion": "price below the 200-EMA with Supertrend pointing down",
+        "matched": 21,
+        "results": [
+          {
+            "symbol": "SOLUSDT",
+            "price": 70.87,
+            "rsi_14": 19.931791,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.59,
+            "adx_14": 46.8
+          },
+          {
+            "symbol": "DOGEUSDT",
+            "price": 0.05833,
+            "rsi_14": 25.136529,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.52,
+            "adx_14": 44.1
+          },
+          {
+            "symbol": "XAUTUSDT",
+            "price": 3855.85,
+            "rsi_14": 38.287012,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.41,
+            "adx_14": 24.9
+          },
+          {
+            "symbol": "ADAUSDT",
+            "price": 0.1513,
+            "rsi_14": 26.92778,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.56,
+            "adx_14": 40.9
+          },
+          {
+            "symbol": "PAXGUSDT",
+            "price": 3857.4,
+            "rsi_14": 38.008992,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.53,
+            "adx_14": 24.9
+          },
+          {
+            "symbol": "LTCUSDT",
+            "price": 44.23,
+            "rsi_14": 27.141965,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.43,
+            "adx_14": 41.4
+          },
+          {
+            "symbol": "TAOUSDT",
+            "price": 187.6,
+            "rsi_14": 31.202895,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.39,
+            "adx_14": 43.3
+          },
+          {
+            "symbol": "AAVEUSDT",
+            "price": 108.56,
+            "rsi_14": 35.235775,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.33,
+            "adx_14": 31.9
+          },
+          {
+            "symbol": "ASTERUSDT",
+            "price": 0.537,
+            "rsi_14": 29.721061,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 1.73,
+            "adx_14": 35.1
+          },
+          {
+            "symbol": "XRPUSDT",
+            "price": 0.9496,
+            "rsi_14": 25.536898,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.51,
+            "adx_14": 35.2
+          },
+          {
+            "symbol": "UNIUSDT",
+            "price": 5.096,
+            "rsi_14": 31.965535,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.34,
+            "adx_14": 36.9
+          },
+          {
+            "symbol": "SUIUSDT",
+            "price": 0.7159,
+            "rsi_14": 31.667155,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.34,
+            "adx_14": 34.3
+          },
+          {
+            "symbol": "AVAXUSDT",
+            "price": 7.08,
+            "rsi_14": 32.070564,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.38,
+            "adx_14": 21.4
+          },
+          {
+            "symbol": "LINKUSDT",
+            "price": 9.094,
+            "rsi_14": 31.278089,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.31,
+            "adx_14": 34.3
+          },
+          {
+            "symbol": "TRXUSDT",
+            "price": 0.3048,
+            "rsi_14": 33.118222,
+            "rating": "weak_sell",
+            "rating_score": -0.257,
+            "trend_strength": "weak",
+            "volume_vs_20bar_avg": 0.25,
+            "adx_14": 12.7
+          },
+          {
+            "symbol": "BTCUSDT",
+            "price": 64022.73,
+            "rsi_14": 22.726233,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.59,
+            "adx_14": 34.1
+          },
+          {
+            "symbol": "BNBUSDT",
+            "price": 587.0,
+            "rsi_14": 25.066529,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.36,
+            "adx_14": 38.4
+          },
+          {
+            "symbol": "ETHUSDT",
+            "price": 1795.4,
+            "rsi_14": 24.686716,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.45,
+            "adx_14": 35.0
+          },
+          {
+            "symbol": "PEPEUSDT",
+            "price": 4e-06,
+            "rsi_14": 36.146708,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.27,
+            "adx_14": 29.3
+          },
+          {
+            "symbol": "ENAUSDT",
+            "price": 0.1163,
+            "rsi_14": 28.450432,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.49,
+            "adx_14": 34.4
+          }
+        ]
+      },
+      "volume_spike": {
+        "criterion": "volume at least 2x its 20-bar average",
+        "matched": 1,
+        "results": [
+          {
+            "symbol": "RAREUSDT",
+            "price": 0.01534,
+            "rsi_14": 64.575632,
+            "rating": "neutral",
+            "rating_score": 0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 7.19,
+            "adx_14": 20.6
+          }
+        ]
+      },
+      "squeeze": {
+        "criterion": "Bollinger width in the tightest quarter of its recent range",
+        "matched": 0,
+        "results": []
+      },
+      "_meta": {
+        "requested": 38,
+        "evaluated": 38,
+        "skipped": 0
+      }
+    },
+    "idx": {
+      "oversold": {
+        "criterion": "RSI below 30",
+        "matched": 2,
+        "results": [
+          {
+            "symbol": "BNLI.JK",
+            "price": 1290.0,
+            "rsi_14": 23.188897,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.29,
+            "adx_14": 41.4
+          },
+          {
+            "symbol": "BANK.JK",
+            "price": 164.0,
+            "rsi_14": 29.820458,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.56,
+            "adx_14": 41.7
+          }
+        ]
+      },
+      "overbought": {
+        "criterion": "RSI above 70",
+        "matched": 0,
+        "results": []
+      },
+      "uptrend": {
+        "criterion": "price above the 200-EMA with Supertrend pointing up",
+        "matched": 3,
+        "results": [
+          {
+            "symbol": "MEGA.JK",
+            "price": 1970.0,
+            "rsi_14": 60.121424,
+            "rating": "neutral",
+            "rating_score": 0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.75,
+            "adx_14": 39.0
+          },
+          {
+            "symbol": "BTPN.JK",
+            "price": 2410.0,
+            "rsi_14": 50.434347,
+            "rating": "neutral",
+            "rating_score": 0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.18,
+            "adx_14": 33.6
+          },
+          {
+            "symbol": "BDMN.JK",
+            "price": 4720.0,
+            "rsi_14": 50.155638,
+            "rating": "neutral",
+            "rating_score": 0.086,
+            "trend_strength": "weak",
+            "volume_vs_20bar_avg": 0.41,
+            "adx_14": 16.2
+          }
+        ]
+      },
+      "downtrend": {
+        "criterion": "price below the 200-EMA with Supertrend pointing down",
+        "matched": 24,
+        "results": [
+          {
+            "symbol": "BNLI.JK",
+            "price": 1290.0,
+            "rsi_14": 23.188897,
+            "rating": "sell",
+            "rating_score": -0.571,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.29,
+            "adx_14": 41.4
+          },
+          {
+            "symbol": "BJBR.JK",
+            "price": 735.0,
+            "rsi_14": 55.063508,
+            "rating": "weak_sell",
+            "rating_score": -0.429,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 1.23,
+            "adx_14": 48.2
+          },
+          {
+            "symbol": "BBYB.JK",
+            "price": 160.0,
+            "rsi_14": 44.550019,
+            "rating": "weak_sell",
+            "rating_score": -0.429,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.92,
+            "adx_14": 32.1
+          },
+          {
+            "symbol": "BRIS.JK",
+            "price": 1120.0,
+            "rsi_14": 42.420063,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.51,
+            "adx_14": 32.2
+          },
+          {
+            "symbol": "BJTM.JK",
+            "price": 505.0,
+            "rsi_14": 57.810233,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.83,
+            "adx_14": 28.1
+          },
+          {
+            "symbol": "ARTO.JK",
+            "price": 530.0,
+            "rsi_14": 35.407521,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.38,
+            "adx_14": 52.0
+          },
+          {
+            "symbol": "BBKP.JK",
+            "price": 34.0,
+            "rsi_14": 41.428384,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.53,
+            "adx_14": 28.0
+          },
+          {
+            "symbol": "BBHI.JK",
+            "price": 605.0,
+            "rsi_14": 38.738369,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.14,
+            "adx_14": 40.9
+          },
+          {
+            "symbol": "AGRO.JK",
+            "price": 110.0,
+            "rsi_14": 42.072806,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.59,
+            "adx_14": 26.5
+          },
+          {
+            "symbol": "BGTG.JK",
+            "price": 83.0,
+            "rsi_14": 36.032197,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.12,
+            "adx_14": 30.4
+          },
+          {
+            "symbol": "BVIC.JK",
+            "price": 72.0,
+            "rsi_14": 42.410753,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 1.11,
+            "adx_14": 28.0
+          },
+          {
+            "symbol": "SDRA.JK",
+            "price": 162.0,
+            "rsi_14": 34.301472,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.85,
+            "adx_14": 39.7
+          },
+          {
+            "symbol": "BANK.JK",
+            "price": 164.0,
+            "rsi_14": 29.820458,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.56,
+            "adx_14": 41.7
+          },
+          {
+            "symbol": "AMAR.JK",
+            "price": 187.0,
+            "rsi_14": 35.388883,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.07,
+            "adx_14": 35.9
+          },
+          {
+            "symbol": "MCOR.JK",
+            "price": 58.0,
+            "rsi_14": 47.91669,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 0.5,
+            "adx_14": 44.3
+          },
+          {
+            "symbol": "BBSI.JK",
+            "price": 2930.0,
+            "rsi_14": 34.671585,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 1.9,
+            "adx_14": 40.7
+          },
+          {
+            "symbol": "PANS.JK",
+            "price": 1555.0,
+            "rsi_14": 42.351308,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 3.15,
+            "adx_14": 56.3
+          },
+          {
+            "symbol": "BNGA.JK",
+            "price": 1565.0,
+            "rsi_14": 50.558404,
+            "rating": "weak_sell",
+            "rating_score": -0.171,
+            "trend_strength": "weak",
+            "volume_vs_20bar_avg": 0.32,
+            "adx_14": 14.4
+          },
+          {
+            "symbol": "BSIM.JK",
+            "price": 800.0,
+            "rsi_14": 46.123948,
+            "rating": "weak_sell",
+            "rating_score": -0.171,
+            "trend_strength": "weak",
+            "volume_vs_20bar_avg": 0.1,
+            "adx_14": 13.4
+          },
+          {
+            "symbol": "MAYA.JK",
+            "price": 161.0,
+            "rsi_14": 37.355925,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.77,
+            "adx_14": 24.5
+          }
+        ]
+      },
+      "volume_spike": {
+        "criterion": "volume at least 2x its 20-bar average",
+        "matched": 1,
+        "results": [
+          {
+            "symbol": "PANS.JK",
+            "price": 1555.0,
+            "rsi_14": 42.351308,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 3.15,
+            "adx_14": 56.3
+          }
+        ]
+      },
+      "squeeze": {
+        "criterion": "Bollinger width in the tightest quarter of its recent range",
+        "matched": 4,
+        "results": [
+          {
+            "symbol": "BJTM.JK",
+            "price": 505.0,
+            "rsi_14": 57.810233,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.83,
+            "adx_14": 28.1
+          },
+          {
+            "symbol": "PANS.JK",
+            "price": 1555.0,
+            "rsi_14": 42.351308,
+            "rating": "weak_sell",
+            "rating_score": -0.286,
+            "trend_strength": "strong",
+            "volume_vs_20bar_avg": 3.15,
+            "adx_14": 56.3
+          },
+          {
+            "symbol": "ADMF.JK",
+            "price": 7725.0,
+            "rsi_14": 35.301032,
+            "rating": "neutral",
+            "rating_score": -0.143,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 1.5,
+            "adx_14": 33.2
+          },
+          {
+            "symbol": "CFIN.JK",
+            "price": 346.0,
+            "rsi_14": 54.282608,
+            "rating": "neutral",
+            "rating_score": 0.0,
+            "trend_strength": "moderate",
+            "volume_vs_20bar_avg": 0.84,
+            "adx_14": 23.9
+          }
+        ]
+      },
+      "_meta": {
+        "requested": 40,
+        "evaluated": 40,
+        "skipped": 0
+      }
+    }
+  },
+  "watchlist": [
+    {
+      "symbol": "BTCUSDT",
+      "market": "crypto",
+      "price": 64068.07,
+      "rating": "neutral",
+      "rating_score": -0.143,
+      "trend_strength": "moderate",
+      "rsi_14": 22.776026,
+      "adx_14": 34.1,
+      "supertrend_direction": "down",
+      "ema_200": 75202.950733,
+      "atr_pct_of_price": 4.1,
+      "bullish_votes": 3,
+      "bearish_votes": 4,
+      "support_20bar": 62006.0,
+      "resistance_20bar": 81971.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market": "crypto",
+      "price": 1796.37,
+      "rating": "neutral",
+      "rating_score": -0.143,
+      "trend_strength": "moderate",
+      "rsi_14": 24.718039,
+      "adx_14": 35.0,
+      "supertrend_direction": "down",
+      "ema_200": 2251.114771,
+      "atr_pct_of_price": 5.8,
+      "bullish_votes": 3,
+      "bearish_votes": 4,
+      "support_20bar": 1711.08,
+      "resistance_20bar": 2450.0
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market": "crypto",
+      "price": 70.91,
+      "rating": "sell",
+      "rating_score": -0.571,
+      "trend_strength": "strong",
+      "rsi_14": 19.956452,
+      "adx_14": 46.8,
+      "supertrend_direction": "down",
+      "ema_200": 93.770518,
+      "atr_pct_of_price": 6.64,
+      "bullish_votes": 0,
+      "bearish_votes": 4,
+      "support_20bar": 67.41,
+      "resistance_20bar": 103.85
+    },
+    {
+      "symbol": "^JKSE",
+      "market": "stock",
+      "price": 5320.980957,
+      "rating": "weak_sell",
+      "rating_score": -0.286,
+      "trend_strength": "moderate",
+      "rsi_14": 47.839386,
+      "adx_14": 33.9,
+      "supertrend_direction": "down",
+      "ema_200": 6612.180865,
+      "atr_pct_of_price": 2.63,
+      "bullish_votes": 1,
+      "bearish_votes": 3,
+      "support_20bar": 4824.36377,
+      "resistance_20bar": 5455.210938
+    },
+    {
+      "symbol": "BBCA.JK",
+      "market": "idx",
+      "price": 5600.0,
+      "rating": "neutral",
+      "rating_score": -0.143,
+      "trend_strength": "moderate",
+      "rsi_14": 56.360056,
+      "adx_14": 20.3,
+      "supertrend_direction": "up",
+      "ema_200": 6452.541016,
+      "atr_pct_of_price": 3.49,
+      "bullish_votes": 2,
+      "bearish_votes": 3,
+      "support_20bar": 4740.0,
+      "resistance_20bar": 5650.0
+    },
+    {
+      "symbol": "BBRI.JK",
+      "market": "idx",
+      "price": 3100.0,
+      "rating": "neutral",
+      "rating_score": -0.143,
+      "trend_strength": "moderate",
+      "rsi_14": 61.879811,
+      "adx_14": 22.3,
+      "supertrend_direction": "up",
+      "ema_200": 3245.047945,
+      "atr_pct_of_price": 3.54,
+      "bullish_votes": 2,
+      "bearish_votes": 3,
+      "support_20bar": 2580.0,
+      "resistance_20bar": 3110.0
+    },
+    {
+      "symbol": "TLKM.JK",
+      "market": "idx",
+      "price": 2180.0,
+      "rating": "neutral",
+      "rating_score": 0.0,
+      "trend_strength": "moderate",
+      "rsi_14": 54.526769,
+      "adx_14": 21.1,
+      "supertrend_direction": "up",
+      "ema_200": 2689.038448,
+      "atr_pct_of_price": 4.32,
+      "bullish_votes": 2,
+      "bearish_votes": 2,
+      "support_20bar": 1840.0,
+      "resistance_20bar": 2260.0
+    },
+    {
+      "symbol": "AAPL",
+      "market": "stock",
+      "price": 356.269989,
+      "rating": "weak_buy",
+      "rating_score": 0.171,
+      "trend_strength": "weak",
+      "rsi_14": 60.641004,
+      "adx_14": 18.7,
+      "supertrend_direction": "up",
+      "ema_200": 307.879873,
+      "atr_pct_of_price": 2.31,
+      "bullish_votes": 4,
+      "bearish_votes": 2,
+      "support_20bar": 325.329987,
+      "resistance_20bar": 360.829987
+    },
+    {
+      "symbol": "NVDA",
+      "market": "stock",
+      "price": 162.850006,
+      "rating": "sell",
+      "rating_score": -0.571,
+      "trend_strength": "strong",
+      "rsi_14": 24.857679,
+      "adx_14": 41.5,
+      "supertrend_direction": "down",
+      "ema_200": 204.078932,
+      "atr_pct_of_price": 6.13,
+      "bullish_votes": 0,
+      "bearish_votes": 4,
+      "support_20bar": 148.800003,
+      "resistance_20bar": 222.190002
+    }
+  ],
+  "prediction": {
+    "top_by_volume": [
+      {
+        "id": "561994",
+        "slug": "will-kristi-noem-win-the-2028-republican-presidential-nomination",
+        "question": "Will Kristi Noem win the 2028 Republican presidential nomination?",
+        "outcomes": [
+          {
+            "outcome": "Yes",
+            "price": 0.0015,
+            "implied_probability_pct": 0.15,
+            "token_id": "46777072088650922464797852907503479539785178123001199763117403684202580813104"
+          },
+          {
+            "outcome": "No",
+            "price": 0.9985,
+            "implied_probability_pct": 99.85,
+            "token_id": "72681113618462806097972236701451065622180139607703509985766492272651534581276"
+          }
+        ],
+        "volume_24h": 1151835.522,
+        "volume_total": 39129183.175599,
+        "liquidity": 2310431.90544,
+        "spread": 0.001,
+        "best_bid": 0.001,
+        "best_ask": 0.002,
+        "active": true,
+        "closed": false,
+        "end_date": "2028-11-08T04:59:00Z",
+        "url": "https://polymarket.com/market/will-kristi-noem-win-the-2028-republican-presidential-nomination"
+      },
+      {
+        "id": "6919847",
+        "slug": "will-candidate-a-be-the-next-ceo-of-nvidia",
+        "question": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
+        "outcomes": [
+          {
+            "outcome": "Yes",
+            "price": 0.1675,
+            "implied_probability_pct": 16.75,
+            "token_id": "30917853047681848974124763406524368436482316036542704956055886396093348090575"
+          },
+          {
+            "outcome": "No",
+            "price": 0.8325,
+            "implied_probability_pct": 83.25,
+            "token_id": "1235542575596688477313848611478957797754574132778744552334368030605653599770"
+          }
+        ],
+        "volume_24h": 898231.425291,
+        "volume_total": 1693195.511676,
+        "liquidity": 222092.86751,
+        "spread": 0.001,
+        "best_bid": 0.167,
+        "best_ask": 0.168,
+        "active": true,
+        "closed": false,
+        "end_date": "2029-01-01T04:59:00Z",
+        "url": "https://polymarket.com/market/will-candidate-a-be-the-next-ceo-of-nvidia"
+      },
+      {
+        "id": "6998285",
+        "slug": "will-jensen-huang-rejoin-nvidia-by-december-31-2026",
+        "question": "Will Jensen Huang rejoin NVIDIA by December 31, 2026?",
+        "outcomes": [
+          {
+            "outcome": "Yes",
+            "price": 0.1225,
+            "implied_probability_pct": 12.25,
+            "token_id": "4872670756822880674944283038882529075210700927252109488954070437890542145542"
+          },
+          {
+            "outcome": "No",
+            "price": 0.8775,
+            "implied_probability_pct": 87.75,
+            "token_id": "99515425688162145433015537697061766068227910832727697250207811996495663573106"
+          }
+        ],
+        "volume_24h": 495266.603231,
+        "volume_total": 1012806.107171,
+        "liquidity": 262631.68118,
+        "spread": 0.001,
+        "best_bid": 0.122,
+        "best_ask": 0.123,
+        "active": true,
+        "closed": false,
+        "end_date": "2027-01-01T04:59:00Z",
+        "url": "https://polymarket.com/market/will-jensen-huang-rejoin-nvidia-by-december-31-2026"
+      },
+      {
+        "id": "6998284",
+        "slug": "will-jensen-huang-rejoin-nvidia-by-november-30-2026",
+        "question": "Will Jensen Huang rejoin NVIDIA by November 30, 2026?",
+        "outcomes": [
+          {
+            "outcome": "Yes",
+            "price": 0.0525,
+            "implied_probability_pct": 5.25,
+            "token_id": "706245228405317302176237030016476704773296716492359505728380061337466418349"
+          },
+          {
+            "outcome": "No",
+            "price": 0.9475,
+            "implied_probability_pct": 94.75,
+            "token_id": "78050707233661870173074202833865854714024023780994250642218115804678415254675"
+          }
+        ],
+        "volume_24h": 432944.444524,
+        "volume_total": 723908.974424,
+        "liquidity": 168247.29234,
+        "spread": 0.003,
+        "best_bid": 0.051,
+        "best_ask": 0.054,
+        "active": true,
+        "closed": false,
+        "end_date": "2026-12-01T04:59:00Z",
+        "url": "https://polymarket.com/market/will-jensen-huang-rejoin-nvidia-by-november-30-2026"
+      },
+      {
+        "id": "2772194",
+        "slug": "will-shakhtar-donetsk-win-the-2026-27-uefa-champions-league-championship-20260701202025578",
+        "question": "Will Shakhtar Donetsk win the 2026-27 UEFA Champions League Championship?",
+        "outcomes": [
+          {
+            "outcome": "Yes",
+            "price": 0.0015,
+            "implied_probability_pct": 0.15,
+            "token_id": "33339798372916037220786136133406478491116150628220441951753426683441228279665"
+          },
+          {
+            "outcome": "No",
+            "price": 0.9985,
+            "implied_probability_pct": 99.85,
+            "token_id": "104057763218510615367140802415589642126328786949880639432107896044654185136344"
+          }
+        ],
+        "volume_24h": 425675.132,
+        "volume_total": 44660517.415306,
+        "liquidity": 238484.44265,
+        "spread": 0.001,
+        "best_bid": 0.001,
+        "best_ask": 0.002,
+        "active": true,
+        "closed": false,
+        "end_date": "2027-05-30T23:59:00Z",
+        "url": "https://polymarket.com/market/will-shakhtar-donetsk-win-the-2026-27-uefa-champions-league-championship-20260701202025578"
+      },
+      {
+        "id": "7078836",
+        "slug": "dota2-frogli-konca-2026-11-16-game2",
+        "question": "Dota 2: Froglings vs DO KONCA - Game 2 Winner",
+        "outcomes": [
+          {
+            "outcome": "Froglings",
+            "price": 0.0005,
+            "implied_probability_pct": 0.05,
+            "token_id": "77106174112969606923094239770235758168832661546084291565621501603523147496909"
+          },
+          {
+            "outcome": "DO KONCA",
+            "price": 0.9995,
+            "implied_probability_pct": 99.95,
+            "token_id": "96220277300931795980808996817270732637470592187645688620284672263525142396575"
+          }
+        ],
+        "volume_24h": 305838.531554,
+        "volume_total": 303609.969595,
+        "liquidity": 174670.66182,
+        "spread": 0.001,
+        "best_bid": null,
+        "best_ask": 0.001,
+        "active": true,
+        "closed": false,
+        "end_date": "2026-11-16T16:00:00Z",
+        "url": "https://polymarket.com/market/dota2-frogli-konca-2026-11-16-game2"
+      },
+      {
+        "id": "5339986",
+        "slug": "israel-x-iran-ceasefire-continues-through-november-15",
+        "question": "Israel x Iran ceasefire continues through November 15?",
+        "outcomes": [
+          {
+            "outcome": "Yes",
+            "price": 0.9965,
+            "implied_probability_pct": 99.65,
+            "token_id": "81002737208387436195452690077971321124621678141221296249970319056583686458028"
+          },
+          {
+            "outcome": "No",
+            "price": 0.0035,
+            "implied_probability_pct": 0.35,
+            "token_id": "81617860044825696470427602276776404152917680737920734100709251051324236143390"
+          }
+        ],
+        "volume_24h": 297364.119294,
+        "volume_total": 3823260.636516,
+        "liquidity": 79921.11217,
+        "spread": 0.001,
+        "best_bid": 0.996,
+        "best_ask": 0.997,
+        "active": true,
+        "closed": false,
+        "end_date": "2026-11-16T04:59:00Z",
+        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-november-15"
+      },
+      {
+        "id": "7001804",
+        "slug": "atp-alcaraz-tiafoe-2026-11-16",
+        "question": "ATP World Tour Finals, Ivan Lendl Group: Carlos Alcaraz vs Frances Tiafoe",
+        "outcomes": [
+          {
+            "outcome": "Carlos Alcaraz",
+            "price": 0.885,
+            "implied_probability_pct": 88.5,
+            "token_id": "8774459853598904954354491314452163145924556953137437826361642615436656891903"
+          },
+          {
+            "outcome": "Frances Tiafoe",
+            "price": 0.115,
+            "implied_probability_pct": 11.5,
+            "token_id": "113506846187657538262360734583480726896605700158310064390180621101902509993322"
+          }
+        ],
+        "volume_24h": 297036.403279,
+        "volume_total": 305001.439386,
+        "liquidity": 142856.7,
+        "spread": 0.01,
+        "best_bid": 0.88,
+        "best_ask": 0.89,
+        "active": true,
+        "closed": false,
+        "end_date": "2026-11-23T13:00:00Z",
+        "url": "https://polymarket.com/market/atp-alcaraz-tiafoe-2026-11-16"
+      },
+      {
+        "id": "561258",
+        "slug": "will-jamie-dimon-win-the-2028-us-presidential-election",
+        "question": "Will Jamie Dimon win the 2028 US Presidential Election?",
+        "outcomes": [
+          {
+            "outcome": "Yes",
+            "price": 0.0025,
+            "implied_probability_pct": 0.25,
+            "token_id": "23692929455124171734375794579007643086071570310019729232490607671061438183936"
+          },
+          {
+            "outcome": "No",
+            "price": 0.9975,
+            "implied_probability_pct": 99.75,
+            "token_id": "30050897091642315762983745166096629857367320723415212749446858994810226049012"
+          }
+        ],
+        "volume_24h": 296033.6,
+        "volume_total": 11901890.97257,
+        "liquidity": 348601.77462,
+        "spread": 0.001,
+        "best_bid": 0.002,
+        "best_ask": 0.003,
+        "active": true,
+        "closed": false,
+        "end_date": "2028-11-08T04:59:00Z",
+        "url": "https://polymarket.com/market/will-jamie-dimon-win-the-2028-us-presidential-election"
+      },
+      {
+        "id": "703258",
+        "slug": "will-jesus-christ-return-before-2027",
+        "question": "Will Jesus Christ return before 2027?",
+        "outcomes": [
+          {
+            "outcome": "Yes",
+            "price": 0.0085,
+            "implied_probability_pct": 0.85,
+            "token_id": "69324317355037271422943965141382095011871956039434394956830818206664869608517"
+          },
+          {
+            "outcome": "No",
+            "price": 0.9915,
+            "implied_probability_pct": 99.15,
+            "token_id": "51797157743046504218541616681751597845468055908324407922581755135522797852101"
+          }
+        ],
+        "volume_24h": 238417.837444,
+        "volume_total": 69595446.98216,
+        "liquidity": 2170054.15438,
+        "spread": 0.001,
+        "best_bid": 0.008,
+        "best_ask": 0.009,
+        "active": true,
+        "closed": false,
+        "end_date": "2027-01-01T04:59:00Z",
+        "url": "https://polymarket.com/market/will-jesus-christ-return-before-2027"
+      },
+      {
+        "id": "3580932",
+        "slug": "will-chiang-wan-an-win-the-next-taipei-mayor-election-20260813125857101",
+        "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+        "outcomes": [
+          {
+            "outcome": "Yes",
+            "price": 0.645,
+            "implied_probability_pct": 64.5,
+            "token_id": "100205215067722297517595068937257697192973299370955287626157382353628199508318"
+          },
+          {
+            "outcome": "No",
+            "price": 0.355,
+            "implied_probability_pct": 35.5,
+            "token_id": "28042880819135054236705112210866715426402068267079731308218252509537644025901"
+          }
+        ],
+        "volume_24h": 204832.297184,
+        "volume_total": 2594187.266549,
+        "liquidity": 486678.5674,
+        "spread": 0.01,
+        "best_bid": 0.64,
+        "best_ask": 0.65,
+        "active": true,
+        "closed": false,
+        "end_date": "2026-11-29T04:59:00Z",
+        "url": "https://polymarket.com/market/will-chiang-wan-an-win-the-next-taipei-mayor-election-20260813125857101"
+      },
+      {
+        "id": "6886462",
+        "slug": "cbb-pepp-ore-2026-11-15",
+        "question": "Pepperdine Waves vs. Oregon Ducks",
+        "outcomes": [
+          {
+            "outcome": "Pepperdine Waves",
+            "price": 0.4625,
+            "implied_probability_pct": 46.25,
+            "token_id": "6029487499353212755412246407337185125253251374258037894198151160984330628274"
+          },
+          {
+            "outcome": "Oregon Ducks",
+            "price": 0.5375,
+            "implied_probability_pct": 53.75,
+            "token_id": "52686752380168639061839518939299513207120904420009801643229714055924262492092"
+          }
+        ],
+        "volume_24h": 191075.221045,
+        "volume_total": 672576.606538,
+        "liquidity": 230603.76283,
+        "spread": 0.051,
+        "best_bid": 0.437,
+        "best_ask": 0.488,
+        "active": true,
+        "closed": false,
+        "end_date": "2026-11-15T22:00:00Z",
+        "url": "https://polymarket.com/market/cbb-pepp-ore-2026-11-15"
+      }
+    ],
+    "topics": {
+      "fed": [
+        {
+          "id": "3215007",
+          "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635",
+          "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.0335,
+              "implied_probability_pct": 3.35,
+              "token_id": "42865728742506860386768556888821101266630139112044622335353850919229585308601"
+            },
+            {
+              "outcome": "No",
+              "price": 0.9665,
+              "implied_probability_pct": 96.65,
+              "token_id": "8077351031134730167836761678618167504307708651130165095377248922919635337796"
+            }
+          ],
+          "volume_24h": 97046.26639,
+          "volume_total": 8463229.837687,
+          "liquidity": 355174.18407,
+          "spread": 0.003,
+          "best_bid": 0.032,
+          "best_ask": 0.035,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-12-09T23:59:00Z",
+          "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635"
+        },
+        {
+          "id": "3215012",
+          "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-january-2027-meeting-20260729233815505",
+          "question": "Will there be no change in Fed interest rates after the January 2027 meeting?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.375,
+              "implied_probability_pct": 37.5,
+              "token_id": "63563009510989471204377539732457086916124654411092982704760023438039220215330"
+            },
+            {
+              "outcome": "No",
+              "price": 0.625,
+              "implied_probability_pct": 62.5,
+              "token_id": "36342864926284644003283595741257595655709757799681943153551982143131732331338"
+            }
+          ],
+          "volume_24h": 72070.248149,
+          "volume_total": 790589.748916,
+          "liquidity": 144134.5288,
+          "spread": 0.01,
+          "best_bid": 0.37,
+          "best_ask": 0.38,
+          "active": true,
+          "closed": false,
+          "end_date": "2027-01-28T04:59:00Z",
+          "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-january-2027-meeting-20260729233815505"
+        },
+        {
+          "id": "3215005",
+          "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808633",
+          "question": "Will the Fed decrease interest rates by 50+ bps after the December 2026 meeting?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.0025,
+              "implied_probability_pct": 0.25,
+              "token_id": "17640596861394454242836532536014033416733783473450136742726948856144855149507"
+            },
+            {
+              "outcome": "No",
+              "price": 0.9975,
+              "implied_probability_pct": 99.75,
+              "token_id": "104236736263775307891497202874191911203963566711959725788584750440530976742193"
+            }
+          ],
+          "volume_24h": 63839.341501,
+          "volume_total": 4996210.216561,
+          "liquidity": 210031.43572,
+          "spread": 0.001,
+          "best_bid": 0.002,
+          "best_ask": 0.003,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-12-09T23:59:00Z",
+          "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808633"
+        },
+        {
+          "id": "3215008",
+          "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808636",
+          "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.875,
+              "implied_probability_pct": 87.5,
+              "token_id": "111662129652828266889360374468657435151479595863413519836161861837506140152890"
+            },
+            {
+              "outcome": "No",
+              "price": 0.125,
+              "implied_probability_pct": 12.5,
+              "token_id": "94483965432909797688470702512207472940215538148754820061518518664128018848687"
+            }
+          ],
+          "volume_24h": 55064.658753,
+          "volume_total": 8987191.328469,
+          "liquidity": 718609.1957,
+          "spread": 0.01,
+          "best_bid": 0.87,
+          "best_ask": 0.88,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-12-09T23:59:00Z",
+          "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808636"
+        },
+        {
+          "id": "3215010",
+          "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-january-2027-meeting-20260729233815503",
+          "question": "Will the Fed decrease interest rates by 50+ bps after the January 2027 meeting?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.0045,
+              "implied_probability_pct": 0.45,
+              "token_id": "45053521911672808043600263178798111402897730682087979734684574823004307023433"
+            },
+            {
+              "outcome": "No",
+              "price": 0.9955,
+              "implied_probability_pct": 99.55,
+              "token_id": "54892629532396715672060844552184409083592827625930470370999146720346626910259"
+            }
+          ],
+          "volume_24h": 35530.865152,
+          "volume_total": 761467.526018,
+          "liquidity": 146923.74951,
+          "spread": 0.001,
+          "best_bid": 0.004,
+          "best_ask": 0.005,
+          "active": true,
+          "closed": false,
+          "end_date": "2027-01-28T04:59:00Z",
+          "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-50-bps-after-the-january-2027-meeting-20260729233815503"
+        }
+      ],
+      "bitcoin": [
+        {
+          "id": "6909224",
+          "slug": "bitcoin-above-70k-on-november-16-2026",
+          "question": "Will the price of Bitcoin be above $70,000 on November 16?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.0005,
+              "implied_probability_pct": 0.05,
+              "token_id": "87315881582841833722750609579991048106942182516221286783585512640947900242615"
+            },
+            {
+              "outcome": "No",
+              "price": 0.9995,
+              "implied_probability_pct": 99.95,
+              "token_id": "88481591375550403660954207453567738767239413405245299407026911535703353182187"
+            }
+          ],
+          "volume_24h": 106171.529235,
+          "volume_total": 140809.362529,
+          "liquidity": 61313.69125,
+          "spread": 0.001,
+          "best_bid": null,
+          "best_ask": 0.001,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-11-16T17:00:00Z",
+          "url": "https://polymarket.com/market/bitcoin-above-70k-on-november-16-2026"
+        },
+        {
+          "id": "7043500",
+          "slug": "will-bitcoin-dip-to-52pt5k-in-november-2026",
+          "question": "Will Bitcoin dip to $52,500 in November?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.105,
+              "implied_probability_pct": 10.5,
+              "token_id": "57262514223782033093240713701226939851669731050011954521827566775962691875445"
+            },
+            {
+              "outcome": "No",
+              "price": 0.895,
+              "implied_probability_pct": 89.5,
+              "token_id": "76271002287793271354225331833686087491326385302841219873761084628145215158084"
+            }
+          ],
+          "volume_24h": 100255.116515,
+          "volume_total": 157214.265737,
+          "liquidity": 77880.5054,
+          "spread": 0.01,
+          "best_bid": 0.1,
+          "best_ask": 0.11,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-12-01T05:00:00Z",
+          "url": "https://polymarket.com/market/will-bitcoin-dip-to-52pt5k-in-november-2026"
+        },
+        {
+          "id": "6909220",
+          "slug": "bitcoin-above-68k-on-november-16-2026",
+          "question": "Will the price of Bitcoin be above $68,000 on November 16?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.0135,
+              "implied_probability_pct": 1.35,
+              "token_id": "115073150182514126293694440368951120861423462721453481525864996767633231244286"
+            },
+            {
+              "outcome": "No",
+              "price": 0.9865,
+              "implied_probability_pct": 98.65,
+              "token_id": "11360520950602222975691594749460428213088749501516936847555339380791915620389"
+            }
+          ],
+          "volume_24h": 66809.835613,
+          "volume_total": 137978.393829,
+          "liquidity": 56594.60532,
+          "spread": 0.001,
+          "best_bid": 0.013,
+          "best_ask": 0.014,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-11-16T17:00:00Z",
+          "url": "https://polymarket.com/market/bitcoin-above-68k-on-november-16-2026"
+        },
+        {
+          "id": "7030665",
+          "slug": "bitcoin-up-or-down-on-november-16-2026",
+          "question": "Bitcoin Up or Down on November 16?",
+          "outcomes": [
+            {
+              "outcome": "Up",
+              "price": 0.305,
+              "implied_probability_pct": 30.5,
+              "token_id": "47447323394179084536932451082540855252538011140489186799663407711866521422089"
+            },
+            {
+              "outcome": "Down",
+              "price": 0.695,
+              "implied_probability_pct": 69.5,
+              "token_id": "5840250059642152486900462775224030222483255330114021370291102428106042469958"
+            }
+          ],
+          "volume_24h": 64303.221764,
+          "volume_total": 63104.86624,
+          "liquidity": 51857.1344,
+          "spread": 0.01,
+          "best_bid": 0.3,
+          "best_ask": 0.31,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-11-16T17:00:00Z",
+          "url": "https://polymarket.com/market/bitcoin-up-or-down-on-november-16-2026"
+        },
+        {
+          "id": "6909231",
+          "slug": "bitcoin-above-72k-on-november-16-2026",
+          "question": "Will the price of Bitcoin be above $72,000 on November 16?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.001,
+              "implied_probability_pct": 0.1,
+              "token_id": "59179399540083962420381433634409280670677955069555509990998983334242731689121"
+            },
+            {
+              "outcome": "No",
+              "price": 0.999,
+              "implied_probability_pct": 99.9,
+              "token_id": "44445516043016148704335220168296429140916416836673923065498376264087805714951"
+            }
+          ],
+          "volume_24h": 61783.570496,
+          "volume_total": 90836.02981,
+          "liquidity": 61905.8643,
+          "spread": 0.002,
+          "best_bid": null,
+          "best_ask": 0.002,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-11-16T17:00:00Z",
+          "url": "https://polymarket.com/market/bitcoin-above-72k-on-november-16-2026"
+        }
+      ],
+      "election": [
+        {
+          "id": "561258",
+          "slug": "will-jamie-dimon-win-the-2028-us-presidential-election",
+          "question": "Will Jamie Dimon win the 2028 US Presidential Election?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.0025,
+              "implied_probability_pct": 0.25,
+              "token_id": "23692929455124171734375794579007643086071570310019729232490607671061438183936"
+            },
+            {
+              "outcome": "No",
+              "price": 0.9975,
+              "implied_probability_pct": 99.75,
+              "token_id": "30050897091642315762983745166096629857367320723415212749446858994810226049012"
+            }
+          ],
+          "volume_24h": 296033.6,
+          "volume_total": 11901890.97257,
+          "liquidity": 345669.73462,
+          "spread": 0.001,
+          "best_bid": 0.002,
+          "best_ask": 0.003,
+          "active": true,
+          "closed": false,
+          "end_date": "2028-11-08T04:59:00Z",
+          "url": "https://polymarket.com/market/will-jamie-dimon-win-the-2028-us-presidential-election"
+        },
+        {
+          "id": "3580932",
+          "slug": "will-chiang-wan-an-win-the-next-taipei-mayor-election-20260813125857101",
+          "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.645,
+              "implied_probability_pct": 64.5,
+              "token_id": "100205215067722297517595068937257697192973299370955287626157382353628199508318"
+            },
+            {
+              "outcome": "No",
+              "price": 0.355,
+              "implied_probability_pct": 35.5,
+              "token_id": "28042880819135054236705112210866715426402068267079731308218252509537644025901"
+            }
+          ],
+          "volume_24h": 204832.297184,
+          "volume_total": 2594187.266549,
+          "liquidity": 488814.7801,
+          "spread": 0.01,
+          "best_bid": 0.64,
+          "best_ask": 0.65,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-11-29T04:59:00Z",
+          "url": "https://polymarket.com/market/will-chiang-wan-an-win-the-next-taipei-mayor-election-20260813125857101"
+        },
+        {
+          "id": "3580933",
+          "slug": "will-puma-shen-win-the-next-taipei-mayor-election-20260813125857102",
+          "question": "Will Puma Shen win the next Taipei Mayor election?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.3555,
+              "implied_probability_pct": 35.55,
+              "token_id": "71621185653281721927174401118354054745399424014255544529977515442951477963801"
+            },
+            {
+              "outcome": "No",
+              "price": 0.6445,
+              "implied_probability_pct": 64.45,
+              "token_id": "72820619922053432516748905329266890906103969024802768151634670763988243600546"
+            }
+          ],
+          "volume_24h": 122881.384216,
+          "volume_total": 2866296.580565,
+          "liquidity": 460944.52801,
+          "spread": 0.001,
+          "best_bid": 0.355,
+          "best_ask": 0.356,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-11-29T04:59:00Z",
+          "url": "https://polymarket.com/market/will-puma-shen-win-the-next-taipei-mayor-election-20260813125857102"
+        },
+        {
+          "id": "561286",
+          "slug": "will-cory-booker-win-the-2028-us-presidential-election",
+          "question": "Will Cory Booker win the 2028 US Presidential Election?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.0025,
+              "implied_probability_pct": 0.25,
+              "token_id": "45687465492136610432414760651439156784432277027884402949244768093549372341771"
+            },
+            {
+              "outcome": "No",
+              "price": 0.9975,
+              "implied_probability_pct": 99.75,
+              "token_id": "15244712192877623539205256349261721273301941119593543750592306956312171722136"
+            }
+          ],
+          "volume_24h": 74449.38,
+          "volume_total": 401344.603,
+          "liquidity": 489184.87108,
+          "spread": 0.001,
+          "best_bid": 0.002,
+          "best_ask": 0.003,
+          "active": true,
+          "closed": false,
+          "end_date": "2028-11-07T00:00:00Z",
+          "url": "https://polymarket.com/market/will-cory-booker-win-the-2028-us-presidential-election"
+        },
+        {
+          "id": "5420004",
+          "slug": "will-luka-mesec-win-the-2026-ljubljana-mayoral-election",
+          "question": "Will Luka Mesec win the 2026 Ljubljana mayoral election?",
+          "outcomes": [
+            {
+              "outcome": "Yes",
+              "price": 0.225,
+              "implied_probability_pct": 22.5,
+              "token_id": "17369751665634178113720344648216529123743921774085801803913370242724945636013"
+            },
+            {
+              "outcome": "No",
+              "price": 0.775,
+              "implied_probability_pct": 77.5,
+              "token_id": "86518940039892178675190350795231406679028630218658985031744644246673358976737"
+            }
+          ],
+          "volume_24h": 71582.129803,
+          "volume_total": 205550.828386,
+          "liquidity": 32384.7215,
+          "spread": 0.01,
+          "best_bid": 0.22,
+          "best_ask": 0.23,
+          "active": true,
+          "closed": false,
+          "end_date": "2026-11-16T04:59:00Z",
+          "url": "https://polymarket.com/market/will-luka-mesec-win-the-2026-ljubljana-mayoral-election"
+        }
+      ]
+    }
+  },
+  "backtests": {
+    "comparisons": [
+      {
+        "symbol": "BTCUSDT",
+        "market": "crypto",
+        "bars": 700,
+        "ranking": [
+          {
+            "strategy": "rsi_pullback",
+            "total_return_pct": 13.05,
+            "sharpe": 0.7,
+            "max_drawdown_pct": 8.76,
+            "win_rate_pct": 50.0,
+            "trades": 4
+          },
+          {
+            "strategy": "triple_ema",
+            "total_return_pct": 8.6,
+            "sharpe": 0.32,
+            "max_drawdown_pct": 18.08,
+            "win_rate_pct": 33.3,
+            "trades": 9
+          },
+          {
+            "strategy": "macd_cross",
+            "total_return_pct": -10.72,
+            "sharpe": -0.09,
+            "max_drawdown_pct": 27.69,
+            "win_rate_pct": 25.0,
+            "trades": 28
+          },
+          {
+            "strategy": "rsi_reversion",
+            "total_return_pct": -14.47,
+            "sharpe": -0.13,
+            "max_drawdown_pct": 27.54,
+            "win_rate_pct": 16.7,
+            "trades": 6
+          },
+          {
+            "strategy": "ema_cross",
+            "total_return_pct": -9.35,
+            "sharpe": -0.13,
+            "max_drawdown_pct": 32.79,
+            "win_rate_pct": 28.6,
+            "trades": 7
+          },
+          {
+            "strategy": "keltner_breakout",
+            "total_return_pct": -6.19,
+            "sharpe": -0.15,
+            "max_drawdown_pct": 25.57,
+            "win_rate_pct": 28.6,
+            "trades": 7
+          },
+          {
+            "strategy": "bb_reversion",
+            "total_return_pct": -17.43,
+            "sharpe": -0.25,
+            "max_drawdown_pct": 38.45,
+            "win_rate_pct": 71.4,
+            "trades": 14
+          },
+          {
+            "strategy": "donchian_breakout",
+            "total_return_pct": -19.1,
+            "sharpe": -0.39,
+            "max_drawdown_pct": 38.34,
+            "win_rate_pct": 36.4,
+            "trades": 11
+          },
+          {
+            "strategy": "supertrend",
+            "total_return_pct": -25.72,
+            "sharpe": -0.47,
+            "max_drawdown_pct": 41.16,
+            "win_rate_pct": 44.4,
+            "trades": 9
+          }
+        ],
+        "buy_and_hold_return_pct": -39.72
+      },
+      {
+        "symbol": "ETHUSDT",
+        "market": "crypto",
+        "bars": 700,
+        "ranking": [
+          {
+            "strategy": "ema_cross",
+            "total_return_pct": 53.21,
+            "sharpe": 0.76,
+            "max_drawdown_pct": 35.74,
+            "win_rate_pct": 50.0,
+            "trades": 4
+          },
+          {
+            "strategy": "triple_ema",
+            "total_return_pct": 45.38,
+            "sharpe": 0.72,
+            "max_drawdown_pct": 41.77,
+            "win_rate_pct": 42.9,
+            "trades": 7
+          },
+          {
+            "strategy": "supertrend",
+            "total_return_pct": 38.45,
+            "sharpe": 0.62,
+            "max_drawdown_pct": 47.67,
+            "win_rate_pct": 50.0,
+            "trades": 6
+          },
+          {
+            "strategy": "keltner_breakout",
+            "total_return_pct": 1.55,
+            "sharpe": 0.15,
+            "max_drawdown_pct": 33.18,
+            "win_rate_pct": 57.1,
+            "trades": 7
+          },
+          {
+            "strategy": "macd_cross",
+            "total_return_pct": -17.16,
+            "sharpe": 0.01,
+            "max_drawdown_pct": 55.98,
+            "win_rate_pct": 26.1,
+            "trades": 23
+          },
+          {
+            "strategy": "rsi_pullback",
+            "total_return_pct": -21.68,
+            "sharpe": -0.58,
+            "max_drawdown_pct": 30.27,
+            "win_rate_pct": 0.0,
+            "trades": 2
+          },
+          {
+            "strategy": "donchian_breakout",
+            "total_return_pct": -39.91,
+            "sharpe": -0.59,
+            "max_drawdown_pct": 57.21,
+            "win_rate_pct": 33.3,
+            "trades": 12
+          },
+          {
+            "strategy": "bb_reversion",
+            "total_return_pct": -53.9,
+            "sharpe": -0.74,
+            "max_drawdown_pct": 63.76,
+            "win_rate_pct": 41.7,
+            "trades": 12
+          },
+          {
+            "strategy": "rsi_reversion",
+            "total_return_pct": -60.64,
+            "sharpe": -0.84,
+            "max_drawdown_pct": 64.87,
+            "win_rate_pct": 20.0,
+            "trades": 5
+          }
+        ],
+        "buy_and_hold_return_pct": -53.93
+      }
+    ],
+    "walk_forward": [
+      {
+        "symbol": "BTCUSDT",
+        "strategy": "rsi_pullback",
+        "verdict": {
+          "label": "overfitted",
+          "reason": "out-of-sample performance is non-positive; in-sample results did not carry forward"
+        },
+        "summary": {
+          "mean_in_sample_sharpe": 1.607,
+          "mean_out_of_sample_sharpe": -1.21,
+          "degradation_pct": 175.3,
+          "mean_out_of_sample_return_pct": -1.57,
+          "profitable_folds": "0/3",
+          "folds_beating_buy_and_hold": "3/3",
+          "params_stable": false
+        }
+      }
+    ]
+  },
+  "errors": []
+}
